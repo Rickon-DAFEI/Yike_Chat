@@ -1,8 +1,20 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
+		<view class="top-bar">
+			<view class="top-bar-left">
+				<image src="../../static/img/m7wr6c4l.png" mode=""></image>
+			</view>
+			<view class="top-bar-center">
+				<image src="../../static/img/index/chaowei2.png" mode=""></image>
+			</view>
+			<view class="top-bar-right">
+				<view class="top-bar-eye">
+
+				</view>
+				<view class="top-bar-adder">
+
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -23,30 +35,42 @@
 	}
 </script>
 
-<style>
-	.content {
+<style lang="scss">
+	.content{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
+	.top-bar{
+		height: 88rpx;
+		width: 100%;
+		background:$uni-bg-color ;
+		box-shadow:0px 1px 0px 0px rgba(0,0,0,0.1);
 		display: flex;
-		justify-content: center;
-	}
+		justify-content: space-around;
+		.top-bar-left{
+			image{
+				width: 68px;
+				height:68px;
+				border-radius: $uni-border-radius-base;
+			}
 
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+		}
+		.top-bar-center{
+			image{
+				width: 88rpx;
+				height: 68rpx;
+			}
+		}
+		.top-bar-right{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			view{
+				// border: 1px solid #2C405A;
+			}
+		}
 	}
+	
 </style>
