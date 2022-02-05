@@ -29,6 +29,7 @@
 		}
 		.back-img{
 			margin-top: 21rpx;
+			margin-left: 20rpx;
 			width: 26rpx;
 			height: 46rpx;
 		}
@@ -37,6 +38,7 @@
 			font-weight:500;
 			color:$uni-text-color;
 			line-height:88rpx;
+
 		}
 	}
 	.top-bar-center{
@@ -83,6 +85,7 @@
 			line-height:88rpx;
 			//background: #aaa;
 			padding-right: $uni-spacing-col-base;
+						margin-right: 20rpx;
 		}
 		image{
 			padding: 18rpx 0 0 18rpx;
